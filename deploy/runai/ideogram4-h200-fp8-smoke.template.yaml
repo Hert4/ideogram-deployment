@@ -1,0 +1,65 @@
+# Template only. Adjust image, project labels, secret names, PVC names, and
+# Run:ai GPU-memory resource keys to match the company cluster.
+#
+# First request:
+# - NVIDIA H200
+# - 48GiB GPU memory if fractional GPU memory is enabled
+# - otherwise 1 full H200 temporarily
+
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: ideogram4-h200-fp8-smoke
+  labels:
+    app: ideogram4
+    runai/project: "<RUNAI_PROJECT>"
+spec:
+  backoffLimit: 0
+  template:
+    metadata:
+      labels:
+        app: ideogram4
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: ideogram4
+          image: "<REGISTRY>/ideogram4-test:cuda"
+          imagePullPolicy: IfNotPresent
+          command: ["/bin/bash", "-lc"]
+          args:
+            - |
+              cd /workspace/ideogram4-test
+              scripts/smoke_runai_h200_fp8.sh
+          envFrom:
+            - secretRef:
+                name: ideogram4-secrets
+          env:
+            - name: HF_HOME
+              value: /cache/huggingface
+            - name: IDEOGRAM_OUTPUT
+              value: /outputs/h200_fp8_smoke.png
+          resources:
+            requests:
+              cpu: "8"
+              memory: 64Gi
+              nvidia.com/gpu: "1"
+              # If enabled in this Run:ai cluster, replace with the actual key:
+              # runai.ai/gpu-memory: 48Gi
+            limits:
+              cpu: "16"
+              memory: 96Gi
+              nvidia.com/gpu: "1"
+              # If enabled in this Run:ai cluster, replace with the actual key:
+              # runai.ai/gpu-memory: 48Gi
+          volumeMounts:
+            - name: hf-cache
+              mountPath: /cache/huggingface
+            - name: outputs
+              mountPath: /outputs
+      volumes:
+        - name: hf-cache
+          persistentVolumeClaim:
+            claimName: "<HF_CACHE_PVC>"
+        - name: outputs
+          persistentVolumeClaim:
+            claimName: "<OUTPUTS_PVC>"

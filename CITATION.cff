@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the original Ideogram 4 work and this local runtime harness."
+title: "MISA Ideogram4 Test Harness"
+authors:
+  - name: "MISA AI"
+version: "0.1.0"
+date-released: "2026-06-04"
+repository-code: "https://github.com/Hert4/ideogram4-test"
+references:
+  - type: software
+    title: "Ideogram 4.0 Technical Details: Open model at the forefront of design"
+    authors:
+      - name: "Ideogram Team"
+    year: 2026
+    url: "https://ideogram.ai/blog/ideogram-4.0/"
+  - type: software
+    title: "ideogram-oss/ideogram4"
+    authors:
+      - name: "Ideogram Team"
+    year: 2026
+    url: "https://github.com/ideogram-oss/ideogram4"

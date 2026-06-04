@@ -1,0 +1,19 @@
+  {
+  "high_level_description": "A premium Vietnamese coffee can product ad with crisp typography, clean studio lighting, and a polished commercial look.",
+  "compositional_deconstruction": {
+    "background": "a clean warm gray studio background with soft shadows",
+    "elements": [
+      {
+        "type": "obj",
+        "bbox": [180, 330, 850, 670],
+        "desc": "a sleek matte coffee can centered in the frame"
+      },
+      {
+        "type": "text",
+        "bbox": [430, 390, 570, 610],
+        "text": "MISA COFFEE",
+        "desc": "sharp white uppercase brand text printed on the can"
+      }
+    ]
+  }
+}

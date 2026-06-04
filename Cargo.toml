@@ -1,0 +1,8 @@
+[workspace]
+resolver = "2"
+members = ["crates/ideogram4-cli"]
+
+[workspace.package]
+edition = "2024"
+license-file = "LICENSE.md"
+repository = "https://github.com/Hert4/ideogram4-test"

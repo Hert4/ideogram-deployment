@@ -1,0 +1,34 @@
+{
+  "high_level_description": "Ảnh phố đêm Hà Nội sau mưa với biển hiệu quán phở tiếng Việt ghi PHỞ ĐÊM, ánh đèn phản chiếu trên mặt đường, không khí điện ảnh.",
+  "style_description": {
+    "aesthetics": "điện ảnh, chân thực, giàu không khí đô thị Việt Nam, có chiều sâu",
+    "lighting": "ánh đèn neon ấm từ biển hiệu, phản chiếu trên mặt đường ướt, bóng tối xanh nhẹ",
+    "photo": "street photography ban đêm, cinematic, realistic",
+    "medium": "digital photography",
+    "color_palette": ["#111827", "#F97316", "#FDE68A", "#1D4ED8"]
+  },
+  "compositional_deconstruction": {
+    "background": "con phố nhỏ ở Hà Nội sau cơn mưa, xe máy đỗ bên lề, mặt đường ướt phản chiếu ánh đèn, xa xa có vài người đi bộ mờ nhẹ",
+    "elements": [
+      {
+        "type": "obj",
+        "bbox": [120, 160, 880, 840],
+        "desc": "mặt tiền một quán phở nhỏ với mái hiên, bàn ghế thấp phía trước và hơi nước bốc lên từ nồi nước dùng",
+        "color_palette": ["#111827", "#F97316", "#FDE68A"]
+      },
+      {
+        "type": "text",
+        "bbox": [160, 280, 320, 720],
+        "text": "PHỞ ĐÊM",
+        "desc": "biển hiệu tiếng Việt lớn, chữ màu vàng ấm trên nền đỏ cam, rõ nét và dễ đọc",
+        "color_palette": ["#FDE68A", "#F97316"]
+      },
+      {
+        "type": "obj",
+        "bbox": [620, 180, 930, 820],
+        "desc": "vệt phản chiếu ánh neon trên mặt đường ướt, kéo dài về phía người xem",
+        "color_palette": ["#F97316", "#1D4ED8"]
+      }
+    ]
+  }
+}

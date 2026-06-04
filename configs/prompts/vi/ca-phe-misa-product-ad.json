@@ -1,0 +1,35 @@
+{
+  "high_level_description": "Ảnh quảng cáo sản phẩm cao cấp cho một lon cà phê Việt Nam tên CÀ PHÊ MISA, bố cục sạch, chữ sắc nét, ánh sáng studio chuyên nghiệp.",
+  "style_description": {
+    "aesthetics": "thương mại cao cấp, tối giản, sang trọng, phù hợp ảnh quảng cáo sản phẩm",
+    "lighting": "ánh sáng studio mềm từ bên trái, viền sáng nhẹ phía sau sản phẩm, bóng đổ tinh tế",
+    "photo": "ảnh chụp sản phẩm siêu thực, chi tiết cao, độ sâu trường ảnh vừa phải",
+    "medium": "digital product photography",
+    "color_palette": ["#0B0F14", "#F4D35E", "#FFFFFF", "#B08968"]
+  },
+  "compositional_deconstruction": {
+    "background": "nền studio màu xám ấm sạch, có mặt bàn đá mờ và một vệt sáng nhẹ phía sau",
+    "elements": [
+      {
+        "type": "obj",
+        "bbox": [150, 360, 860, 640],
+        "desc": "một lon cà phê matte màu đen đặt ở giữa khung hình, có điểm nhấn vàng kim và giọt nước nhỏ trên bề mặt",
+        "color_palette": ["#0B0F14", "#F4D35E", "#FFFFFF"]
+      },
+      {
+        "type": "text",
+        "bbox": [380, 405, 560, 595],
+        "text": "CÀ PHÊ MISA",
+        "desc": "chữ thương hiệu tiếng Việt in hoa màu trắng, rõ nét, căn giữa trên thân lon",
+        "color_palette": ["#FFFFFF", "#F4D35E"]
+      },
+      {
+        "type": "text",
+        "bbox": [585, 420, 655, 580],
+        "text": "ĐẬM VỊ VIỆT",
+        "desc": "dòng chữ phụ nhỏ hơn, màu vàng kim, rõ nét và thẳng hàng dưới tên thương hiệu",
+        "color_palette": ["#F4D35E"]
+      }
+    ]
+  }
+}

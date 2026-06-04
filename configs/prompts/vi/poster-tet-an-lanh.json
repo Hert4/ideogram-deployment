@@ -1,0 +1,34 @@
+{
+  "high_level_description": "Poster Tết hiện đại bằng tiếng Việt với câu TẾT AN LÀNH, có hoa mai, phong bao đỏ, ánh sáng ấm và phong cách thiết kế cao cấp.",
+  "style_description": {
+    "aesthetics": "vui tươi, cao cấp, giàu không khí Tết Việt Nam, bố cục poster rõ ràng",
+    "lighting": "ánh sáng vàng ấm, có điểm sáng nhẹ như đèn lồng, tương phản dịu",
+    "medium": "digital illustration poster",
+    "art_style": "minh họa poster hiện đại pha chất liệu giấy thủ công",
+    "color_palette": ["#B91C1C", "#FBBF24", "#FFF7ED", "#166534"]
+  },
+  "compositional_deconstruction": {
+    "background": "nền đỏ trầm có họa tiết giấy dó nhẹ, vài bông mai vàng và ánh đèn lồng mờ ở xa",
+    "elements": [
+      {
+        "type": "text",
+        "bbox": [180, 220, 380, 780],
+        "text": "TẾT AN LÀNH",
+        "desc": "chữ tiếng Việt lớn, rõ nét, màu vàng kim, kiểu chữ trang trọng ở phần trên poster",
+        "color_palette": ["#FBBF24", "#FFF7ED"]
+      },
+      {
+        "type": "obj",
+        "bbox": [430, 260, 820, 760],
+        "desc": "cành hoa mai vàng uốn nhẹ từ góc phải xuống giữa ảnh, có nhiều nụ hoa nhỏ",
+        "color_palette": ["#FBBF24", "#166534"]
+      },
+      {
+        "type": "obj",
+        "bbox": [650, 330, 900, 670],
+        "desc": "ba phong bao lì xì đỏ xếp chồng trên nền, có viền vàng thanh lịch",
+        "color_palette": ["#B91C1C", "#FBBF24"]
+      }
+    ]
+  }
+}

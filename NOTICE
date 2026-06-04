@@ -1,0 +1,19 @@
+This repository contains a local runtime adaptation and experiment harness for
+Ideogram 4.
+
+Ideogram 4 is provided under and subject to the Ideogram Non-Commercial Model
+Agreement available at:
+
+https://github.com/ideogram-oss/ideogram4/model_licenses/LICENSE-IDEOGRAM-4-NON-COMMERCIAL
+
+Original model, weights, architecture, inference code, and license:
+
+- Author: Ideogram Team
+- Technical report / launch note: https://ideogram.ai/blog/ideogram-4.0/
+- Original repository: https://github.com/ideogram-oss/ideogram4
+- Hugging Face collection: https://huggingface.co/collections/ideogram-ai/ideogram-4
+
+Local modifications in this repository include Mac MPS int8 loading, smoke
+scripts, deployment templates, and Vietnamese prompt samples.
+
+All rights reserved. Copyright © Ideogram, Inc.

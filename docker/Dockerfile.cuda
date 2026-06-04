@@ -1,0 +1,24 @@
+# CUDA image for Linux/Run:ai smoke tests.
+#
+# Build with an approved CUDA PyTorch base image, for example:
+#
+#   docker build \
+#     --build-arg BASE_IMAGE=<company-approved-pytorch-cuda-image> \
+#     -f docker/Dockerfile.cuda \
+#     -t ideogram4-test:cuda .
+
+ARG BASE_IMAGE
+FROM ${BASE_IMAGE}
+
+WORKDIR /workspace/ideogram4-test
+
+ENV PYTHONUNBUFFERED=1 \
+    HF_HOME=/cache/huggingface \
+    PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+
+COPY . .
+
+RUN python -m pip install --upgrade pip \
+    && python -m pip install -e .
+
+CMD ["bash", "scripts/smoke_runai_h200_fp8.sh"]

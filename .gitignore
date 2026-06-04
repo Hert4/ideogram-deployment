@@ -1,0 +1,35 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# macOS
+.DS_Store
+
+# Local environment/secrets
+.env
+.env.*
+!.env.example
+!*.env.example
+
+# Generated inference outputs and logs
+*.log
+out*.png
+output*.png
+*_out.png
+outputs/
+runs/
+
+# Local model/cache directories
+.cache/
+hf-cache/
+huggingface/
+
+# Rust build output
+target/
