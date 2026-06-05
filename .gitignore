@@ -23,7 +23,6 @@ wheels/
 out*.png
 output*.png
 *_out.png
-outputs/
 runs/
 
 # Local model/cache directories
